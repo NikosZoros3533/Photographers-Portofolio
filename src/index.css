@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /*color-scheme: light dark;*/
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #1d0433;
+  background-image: url("/src/assets/studio\ portatis/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 40%;
+}
+
+.menu-container {
+  text-align: center;
+  position: relative;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: #b2dfdb;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 101;
+}
+
+.toggle-button:hover {
+  background-color: #125b57;
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-button.pressed {
+  background-color: #125b57;
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  position: fixed; /* Anchor menu to the screen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width for proper centering */
+  height: 100%; /* Full height to occupy the screen */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background */
+  color: white;
+  z-index: 100; /* Ensure it's above other content */
+}
+
+.menu-list {
+  list-style: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack items */
+  gap: 20px; /* Add spacing between items */
+}
+
+.menu-list li a {
+  text-decoration: none; /* Remove underline */
+  color: #b2dfdb; /* Vibrant color for menu items */
+  font-size: 24px; /* Larger font for a "main menu" look */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #b2dfdb; /* Darker shade on hover */
+  text-shadow: 0px 4px 6px rgba(178, 223, 219, 0.8); /* Glow effect on hover */
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+  margin-top: 100px;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.gallery .pics:hover {
+  filter: opacity(0.9);
+}
+
+.photo-item {
+  width: 100%;
+}
+
+.model {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    transform 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.model.open svg{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #125b57;
+  cursor: pointer;
+
+}
+
+
+.model img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .menu-list {
+    flex-direction: column; /* Stack links */
+    gap: 15px; /* Adjust spacing for smaller screens */
+  }
+}
+
+@media (max-width: 991px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
