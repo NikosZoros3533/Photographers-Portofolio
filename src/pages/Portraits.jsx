@@ -7,7 +7,7 @@ import Img6 from "../assets/portaits/DSC07565.jpg";
 import Img7 from "../assets/portaits/DSC09723.jpg";
 import Img8 from "../assets/portaits/edit_1.jpg";
 import Img9 from "../assets/portaits/edit.jpg";
-import Img10 from "../assets/portaits/ekthesi_ 1.jpg";
+import Img10 from "../assets/portaits/ekthesi_1.jpg";
 import Img11 from "../assets/portaits/manos-8.jpg";
 import Img12 from "../assets/portaits/manos-17.jpg";
 import Gallery from "../components/Gallery";

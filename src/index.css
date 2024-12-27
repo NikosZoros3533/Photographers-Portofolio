@@ -29,7 +29,7 @@ body {
 .home-page {
   margin: 0;
   background-color: black;
-  background-image: url("/src/assets/studio\ portatis/background.jpg");
+  background-image: url("/src/assets/studio-portraits/background.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 40%;
@@ -49,7 +49,7 @@ body {
   transform: translateX(-50%);
   background-color: black;
   color: #b2dfdb;
-  border: 5px solid #b2dfdb;
+  border: 2px solid #b2dfdb;
   padding: 20px 40px;
   font-size: 35px;
   font-weight: bold;
@@ -185,6 +185,18 @@ body {
   padding: 20px 0 20px;
   margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .menu {

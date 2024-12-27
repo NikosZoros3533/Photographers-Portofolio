@@ -1,6 +1,5 @@
+import HomeNavigator from "../components/HomeNavigator";
 
 export default function Home() {
-  return (
-    <div>ddssss</div>
-  )
+  return <div>ss</div>;
 }
