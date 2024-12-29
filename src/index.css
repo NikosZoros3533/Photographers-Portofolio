@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+
+@font-face {
+  font-family: 'titleFont';
+  src: url("/src/assets/fonts/Bake\ Soda.otf") format('woff2');
+}
+
 html {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -44,19 +50,19 @@ body {
 }
 
 #title-home-page{
-  font-size: 25rem; 
+  font-size: 20rem; 
   font-weight: 700;   
   text-transform: uppercase; 
-  font-family: "Bebas Neue", serif; 
-  line-height: 1; /* Control spacing between lines */
-  letter-spacing: 3rem; 
+  font-family: "titleFont", serif; 
+  line-height: 1; 
+  /*letter-spacing: 0.1rem; */
   text-align: center; 
   margin: 0; 
   position: relative;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #0e4543;
   color: #F5F5F5;
-  filter: drop-shadow(0 0 0.75rem #b2dfdb);
+  filter: drop-shadow(0 0 3rem #b2dfdb);
 
 }
 
@@ -254,3 +260,4 @@ body {
     column-width: 100%;
   }
 }
+
