@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Playwrite+US+Trad:wght@100..400&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -26,7 +28,11 @@ body {
   background-position: 50% 40%;
 }
 
+
 .home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   background-color: black;
   background-image: url("/src/assets/studio-portraits/background.jpg");
@@ -36,6 +42,24 @@ body {
   height: 100vh;
   width: 100%;
 }
+
+#title-home-page{
+  font-size: 25rem; 
+  font-weight: 700;   
+  text-transform: uppercase; 
+  font-family: "Bebas Neue", serif; 
+  line-height: 1; /* Control spacing between lines */
+  letter-spacing: 3rem; 
+  text-align: center; 
+  margin: 0; 
+  position: relative;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #0e4543;
+  color: #F5F5F5;
+  filter: drop-shadow(0 0 0.75rem #b2dfdb);
+
+}
+
 
 .menu-container {
   text-align: center;

@@ -1,5 +1,5 @@
 import HomeNavigator from "../components/HomeNavigator";
 
 export default function Home() {
-  return <div>ss</div>;
+  return <div id="title-home-page">DIOVELE</div>;
 }
