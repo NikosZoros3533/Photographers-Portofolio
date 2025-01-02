@@ -178,11 +178,12 @@ body {
   margin-top: 8rem;
   margin-bottom: 0;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   padding: 2rem;
   background-color: white;
   color: black;
 }
+
 .gallery {
   -webkit-column-count: 3;
   -moz-column-count: 3;
