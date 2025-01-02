@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 
 export default function Menu() {
-  const [isMenuVisible, setIsMenuVisible] = useState(true);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   function toggleNavbar() {
     setIsMenuVisible((prevStateNavbar) => !prevStateNavbar);
