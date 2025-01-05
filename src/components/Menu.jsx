@@ -26,7 +26,7 @@ export default function Menu() {
               <Link to="/portraits" onClick={toggleNavbar}>Portraits</Link>
             </li>
             <li>
-              <Link to="/shops" onClick={toggleNavbar}>Shops</Link>
+              <Link to="/food" onClick={toggleNavbar}>Food & Beverages</Link>
             </li>
             <li>
               <Link to="/studio-portraits" onClick={toggleNavbar}>Studio</Link>
@@ -35,7 +35,7 @@ export default function Menu() {
               <Link to="/about" onClick={toggleNavbar}>About</Link>
             </li>
             <li>
-              <Link to="/contact" onClick={toggleNavbar}>Contact</Link>
+              <Link to="/contact" onClick={toggleNavbar}>Book Me</Link>
             </li>
           </ul>
         </nav>

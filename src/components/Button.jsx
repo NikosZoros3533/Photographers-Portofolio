@@ -9,7 +9,7 @@ export default function Button({menuState,onClick}) {
     }
   return createPortal(
     <button className={cssForButton} onClick={onClick}>
-        DioVele
+        Menu
       </button>,document.getElementById("menu-button")
   )
 }

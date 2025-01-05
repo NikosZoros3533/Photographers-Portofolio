@@ -10,6 +10,7 @@ import StudioPortraits from "./pages/StudioPortraits";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
+
 const App = () => {
   return (
     <Router>
@@ -18,7 +19,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/couples" element={<Couples />} />
         <Route path="/portraits" element={<Portraits />} />
-        <Route path="/shops" element={<Shops />} />
+        <Route path="/food" element={<Shops />} />
         <Route path="/studio-portraits" element={<StudioPortraits />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

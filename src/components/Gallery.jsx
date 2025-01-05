@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import Banner from "./Banner";
 
+
 export default function Gallery({ photos }) {
   const [model, setModel] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState();
