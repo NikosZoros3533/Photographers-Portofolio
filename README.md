@@ -3,6 +3,9 @@
 This repository contains the source code for a professional portfolio website designed for photographers. The site is built to showcase photography work, highlight skills, and provide an easy way for clients to get in touch.
 
 ---
+![Portfolio Preview](public/WebsitePreview.png "Portfolio Website Screenshot")
+
+---
 
 ## Features
 
