@@ -38,7 +38,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 40%;
-  
 }
 
 .home-page {
@@ -139,7 +138,7 @@ body {
 
 .menu-icon {
   color: #40e0d0;
-  transition: transform ease-in-out;
+  transition: transform ease-in-out 0.5s;
 }
 
 .menu-icon:hover {
@@ -308,8 +307,6 @@ body {
   column-width: 33%;
   padding: 3rem 1.2rem;
   margin-top: 0;
-  
-
 }
 
 .gallery .pics {
@@ -382,89 +379,9 @@ body {
   margin: 0 auto;
 }
 
-
-
-#hidden{
+#hidden {
   visibility: hidden;
 }
-
-
-.loader {
-  transform: rotateZ(45deg);
-  perspective: 1000px;
-  border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
-  color: #40e0d0;
-}
-  .loader:before,
-  .loader:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 35%;
-    left: 48%;
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-    transform: rotateX(70deg);
-    animation: 1s spin linear infinite;
-  }
-  .loader:after {
-    color: #a91d8d;
-    transform: rotateY(70deg);
-    animation-delay: .4s;
-  }
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotateZ(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateZ(360deg);
-  }
-}
-
-@keyframes rotateccw {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
-  }
-}
-
-@keyframes spin {
-  0%,
-  100% {
-    box-shadow: .2em 0px 0 0px currentcolor;
-  }
-  12% {
-    box-shadow: .2em .2em 0 0 currentcolor;
-  }
-  25% {
-    box-shadow: 0 .2em 0 0px currentcolor;
-  }
-  37% {
-    box-shadow: -.2em .2em 0 0 currentcolor;
-  }
-  50% {
-    box-shadow: -.2em 0 0 0 currentcolor;
-  }
-  62% {
-    box-shadow: -.2em -.2em 0 0 currentcolor;
-  }
-  75% {
-    box-shadow: 0px -.2em 0 0 currentcolor;
-  }
-  87% {
-    box-shadow: .2em -.2em 0 0 currentcolor;
-  }
-}
-
-
-
-
 
 @media (max-width: 768px) {
   .menu {
@@ -506,9 +423,10 @@ body {
     margin-bottom: 2rem;
     background-color: black;
   }
+  .glass-box{
+    width: 13rem;
+  }
 }
-
-
 
 @media (max-width: 480px) {
   .gallery {
@@ -533,4 +451,10 @@ body {
   .glass-box ul {
     flex-direction: column;
   }
+
+  .glass-box{
+    height: 13rem;
+  }
+
+  
 }

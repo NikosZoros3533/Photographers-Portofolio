@@ -1,13 +1,16 @@
 import HomeNavigator from "../components/HomeNavigator";
-import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import AlternateEmailSharpIcon from "@mui/icons-material/AlternateEmailSharp";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const sizeIcons = "2rem"
   return (
     <>
       <div className="home-page section-1">
@@ -22,7 +25,8 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FacebookSharpIcon className="menu-icon" fontSize="large" />
+              
+                <FaFacebook className="menu-icon" size={sizeIcons}/>
               </a>
             </li>
             <li>
@@ -31,7 +35,16 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <InstagramIcon className="menu-icon" fontSize="large" />
+                <FaInstagram className="menu-icon" size={sizeIcons}/>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@diovele"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTiktok className="menu-icon" size={sizeIcons}/>
               </a>
             </li>
             <li>
@@ -40,10 +53,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <AlternateEmailSharpIcon
-                  className="menu-icon"
-                  fontSize="large"
-                />
+                <SiGmail className="menu-icon" size={sizeIcons}/>
               </a>
             </li>
           </ul>

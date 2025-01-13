@@ -1,7 +1,7 @@
-
+import styles from "../css/LoadSpinner.module.css"
 
 export default function LoadSpinner() {
   return (
-    <span class="loader"></span>
+    <span className={styles.loader}></span>
   )
 }
