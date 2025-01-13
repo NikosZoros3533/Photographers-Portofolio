@@ -11,6 +11,7 @@ import Img10 from "../assets/portaits/ekthesi_1.jpg";
 import Img11 from "../assets/portaits/manos-8.jpg";
 import Img12 from "../assets/portaits/manos-17.jpg";
 import Gallery from "../components/Gallery";
+import { useEffect } from "react";
 
 let photos = [
   {
@@ -64,6 +65,9 @@ let photos = [
 ];
 
 export default function Portraits() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
 
   return (

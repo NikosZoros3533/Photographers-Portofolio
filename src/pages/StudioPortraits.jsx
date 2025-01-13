@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Img1 from "../assets/studio-portraits/DSC03544.jpg";
 import Img2 from "../assets/studio-portraits/DSC03572.jpg";
 import Img3 from "../assets/studio-portraits/DSC03694.jpg";
@@ -79,6 +80,10 @@ let photos = [
 ];
 
 export default function StudioPortraits() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Gallery photos={photos} />

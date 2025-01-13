@@ -1,19 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo, useCallback } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import Banner from "./Banner";
+import LoadSpinner from "./LoadSpinner";
 
-
-export default function Gallery({ photos }) {
+const Gallery = memo(({ photos }) => {
   const [model, setModel] = useState(false);
-  const [tempImgSrc, setTempImgSrc] = useState();
+  const [tempImgSrc, setTempImgSrc] = useState(null);
+  const [show, setShow] = useState("hidden");
+  const [showSpinner,setShowSpinner] = useState(false);
 
-  function getImg(imgSrc) {
+  const getImg = useCallback(function getImg(imgSrc) {
     if (tempImgSrc !== imgSrc) {
       setTempImgSrc(imgSrc);
     }
 
     setModel(true);
-  }
+  });
 
   function handleEsc(event) {
     if (event.key === "Escape") {
@@ -30,9 +32,18 @@ export default function Gallery({ photos }) {
     };
   }, [model]);
 
+  useEffect(() => {
+    setShowSpinner(true);
+    const timer = setTimeout(() => {
+      setShow("");
+      setShowSpinner(false);
+    }, 800);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-    <Banner />
+      <Banner />
       <div className={model ? "model open" : "model"}>
         <img src={tempImgSrc} />
         <CloseIcon
@@ -43,8 +54,8 @@ export default function Gallery({ photos }) {
           tabIndex="0"
         />
       </div>
-      <div className="gallery">
-        
+      {showSpinner && <LoadSpinner />}
+      <div className="gallery" id={show}>
         {photos.map((photo) => {
           return (
             <div
@@ -64,4 +75,6 @@ export default function Gallery({ photos }) {
       </div>
     </>
   );
-}
+});
+
+export default Gallery;

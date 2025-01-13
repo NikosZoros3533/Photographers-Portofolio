@@ -48,6 +48,7 @@ import Img47 from "../assets/shops/Food40.jpg";
 import Img48 from "../assets/shops/Food41.jpg";
 
 import Gallery from "../components/Gallery";
+import { useEffect } from "react";
 
 let photos = [
   {
@@ -244,9 +245,12 @@ let photos = [
   },
 ];
 export default function Shops() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Gallery photos={photos} />
     </div>
-  )
+  );
 }
