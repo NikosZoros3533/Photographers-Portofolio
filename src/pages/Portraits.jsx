@@ -10,6 +10,17 @@ import Img9 from "../assets/portaits/edit.jpg";
 import Img10 from "../assets/portaits/ekthesi_1.jpg";
 import Img11 from "../assets/portaits/manos-8.jpg";
 import Img12 from "../assets/portaits/manos-17.jpg";
+import Img13 from "../assets/portaits/New1.jpg";
+import Img14 from "../assets/portaits/New2.jpg";
+import Img15 from "../assets/portaits/New3.jpg";
+import Img16 from "../assets/portaits/New4.jpg";
+import Img17 from "../assets/portaits/New5.jpg";
+import Img18 from "../assets/portaits/New6.jpg";
+import Img19 from "../assets/portaits/New7.jpg";
+import Img20 from "../assets/portaits/New8.jpg";
+import Img21 from "../assets/portaits/New9.jpg";
+import Img22 from "../assets/portaits/New10.jpg";
+import Img23 from "../assets/portaits/New11.jpg";
 import Gallery from "../components/Gallery";
 import { useEffect } from "react";
 
@@ -62,13 +73,56 @@ let photos = [
     id: 12,
     imgSrc: Img12,
   },
+  {
+    id: 13,
+    imgSrc: Img13,
+  },
+  {
+    id: 14,
+    imgSrc: Img14,
+  },
+  {
+    id: 15,
+    imgSrc: Img15,
+  },
+  {
+    id: 16,
+    imgSrc: Img16,
+  },
+  {
+    id: 17,
+    imgSrc: Img17,
+  },
+  {
+    id: 18,
+    imgSrc: Img18,
+  },
+  {
+    id: 19,
+    imgSrc: Img19,
+  },
+  {
+    id: 20,
+    imgSrc: Img20,
+  },
+  {
+    id: 21,
+    imgSrc: Img21,
+  },
+  {
+    id: 22,
+    imgSrc: Img22,
+  },
+  {
+    id: 23,
+    imgSrc: Img23,
+  },
 ];
 
 export default function Portraits() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
 
   return (
     <div>

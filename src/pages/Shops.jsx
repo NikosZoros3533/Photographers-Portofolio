@@ -46,6 +46,20 @@ import Img45 from "../assets/shops/Food38.jpg";
 import Img46 from "../assets/shops/Food39.jpg";
 import Img47 from "../assets/shops/Food40.jpg";
 import Img48 from "../assets/shops/Food41.jpg";
+import Img49 from "../assets/shops/New1.jpg";
+import Img50 from "../assets/shops/New2.jpg";
+import Img51 from "../assets/shops/New3.jpg";
+import Img52 from "../assets/shops/New4.jpg";
+import Img53 from "../assets/shops/New5.jpg";
+import Img54 from "../assets/shops/New6.jpg";
+import Img55 from "../assets/shops/New7.jpg";
+import Img56 from "../assets/shops/New8.jpg";
+import Img57 from "../assets/shops/New9.jpg";
+import Img58 from "../assets/shops/New10.jpg";
+import Img59 from "../assets/shops/New11.jpg";
+import Img60 from "../assets/shops/New12.jpg";
+import Img61 from "../assets/shops/New13.jpg";
+import Img62 from "../assets/shops/New14.jpg";
 
 import Gallery from "../components/Gallery";
 import { useEffect } from "react";
@@ -242,6 +256,62 @@ let photos = [
   {
     id: 48,
     imgSrc: Img48,
+  },
+  {
+    id: 49,
+    imgSrc: Img49,
+  },
+  {
+    id: 50,
+    imgSrc: Img50,
+  },
+  {
+    id: 51,
+    imgSrc: Img51,
+  },
+  {
+    id: 52,
+    imgSrc: Img52,
+  },
+  {
+    id: 53,
+    imgSrc: Img53,
+  },
+  {
+    id: 54,
+    imgSrc: Img54,
+  },
+  {
+    id: 55,
+    imgSrc: Img55,
+  },
+  {
+    id: 56,
+    imgSrc: Img56,
+  },
+  {
+    id: 57,
+    imgSrc: Img57,
+  },
+  {
+    id: 58,
+    imgSrc: Img58,
+  },
+  {
+    id: 59,
+    imgSrc: Img59,
+  },
+  {
+    id: 60,
+    imgSrc: Img60,
+  },
+  {
+    id: 61,
+    imgSrc: Img61,
+  },
+  {
+    id: 62,
+    imgSrc: Img62,
   },
 ];
 export default function Shops() {

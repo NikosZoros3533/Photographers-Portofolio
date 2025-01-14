@@ -14,6 +14,14 @@ import Img12 from "../assets/studio-portraits/DSC06436.jpg";
 import Img13 from "../assets/studio-portraits/DSC06492.jpg";
 import Img14 from "../assets/studio-portraits/DSC06542.jpg";
 import Img15 from "../assets/studio-portraits/DSC06804.jpg";
+import Img16 from "../assets/studio-portraits/New1.jpg";
+import Img17 from "../assets/studio-portraits/New2.jpg";
+import Img18 from "../assets/studio-portraits/New3.jpg";
+import Img19 from "../assets/studio-portraits/New4.jpg";
+import Img20 from "../assets/studio-portraits/New5.jpg";
+import Img21 from "../assets/studio-portraits/New6.jpg";
+import Img22 from "../assets/studio-portraits/New7.jpg";
+import Img23 from "../assets/studio-portraits/New8.jpg";
 import Gallery from "../components/Gallery";
 
 let photos = [
@@ -77,10 +85,41 @@ let photos = [
     id: 15,
     imgSrc: Img15,
   },
+  {
+    id: 16,
+    imgSrc: Img16,
+  },
+  {
+    id: 17,
+    imgSrc: Img17,
+  },
+  {
+    id: 18,
+    imgSrc: Img18,
+  },
+  {
+    id: 19,
+    imgSrc: Img19,
+  },
+  {
+    id: 20,
+    imgSrc: Img20,
+  },
+  {
+    id: 21,
+    imgSrc: Img21,
+  },
+  {
+    id: 22,
+    imgSrc: Img22,
+  },
+  {
+    id: 23,
+    imgSrc: Img23,
+  },
 ];
 
 export default function StudioPortraits() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
