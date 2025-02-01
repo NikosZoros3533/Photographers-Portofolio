@@ -191,7 +191,7 @@ body {
 }
 
 .image-menu:hover {
-  transform: scale(1.09);
+  transform: scale(1.05);
   box-shadow: 0 4px 15px #a91d8d;
 }
 
@@ -322,7 +322,7 @@ body {
   /*filter: opacity(0.7);*/
 
   filter: brightness(0.6); /* Darkens the image slightly */
-  box-shadow: 0 3px 3px #40e0d0;
+  box-shadow: 0.5px 0.5px 5px #40e0d0;
 }
 
 .photo-item {
