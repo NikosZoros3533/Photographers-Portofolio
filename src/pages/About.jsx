@@ -1,8 +1,12 @@
-import React from 'react';
+
 import '../css/About.css'; // Import the CSS file
 import heroIcon from "../assets/heroIcon.jpg"
+import { useEffect } from 'react';
 
 const About = () => {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="about-photographer">
       {/* Hero Section */}

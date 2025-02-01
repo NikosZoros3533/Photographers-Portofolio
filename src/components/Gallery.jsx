@@ -7,7 +7,7 @@ const Gallery = memo(({ photos }) => {
   const [model, setModel] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState(null);
   const [show, setShow] = useState("hidden");
-  const [showSpinner,setShowSpinner] = useState(false);
+  const [showSpinner, setShowSpinner] = useState(false);
 
   const getImg = useCallback(function getImg(imgSrc) {
     if (tempImgSrc !== imgSrc) {
@@ -17,20 +17,35 @@ const Gallery = memo(({ photos }) => {
     setModel(true);
   });
 
-  function handleEsc(event) {
+  function handleKeyDown(event) {
     if (event.key === "Escape") {
       setModel(false);
+    } else if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+      navigateImages(event.key);
+    }
+  }
+
+
+  function navigateImages(direction) {
+    if (!tempImgSrc) return;
+
+    const currentIndex = photos.findIndex((photo) => photo.imgSrc === tempImgSrc);
+
+    if (direction === "ArrowRight" && currentIndex < photos.length - 1) {
+      setTempImgSrc(photos[currentIndex + 1].imgSrc);
+    } else if (direction === "ArrowLeft" && currentIndex > 0) {
+      setTempImgSrc(photos[currentIndex - 1].imgSrc);
     }
   }
 
   useEffect(() => {
     if (model) {
-      window.addEventListener("keydown", handleEsc);
+      window.addEventListener("keydown", handleKeyDown);
     }
     return () => {
-      window.removeEventListener("keydown", handleEsc);
+      window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [model]);
+  }, [model,tempImgSrc]);
 
   useEffect(() => {
     setShowSpinner(true);
@@ -45,10 +60,10 @@ const Gallery = memo(({ photos }) => {
     <>
       <Banner />
       <div className={model ? "model open" : "model"}>
-        <img src={tempImgSrc} />
+        {tempImgSrc && <img src={tempImgSrc} alt="Expanded View"/>}
         <CloseIcon
           onClick={() => setModel(false)}
-          onKeyDown={(e) => handleEsc(e)}
+          onKeyDown={(e) => handleKeyDown(e)}
           role="button"
           aria-label="Close gallery"
           tabIndex="0"
