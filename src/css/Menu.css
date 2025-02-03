@@ -1,0 +1,42 @@
+.menu-container {
+  text-align: center;
+  position: relative;
+}
+
+.menu {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  position: fixed; /* Anchor menu to the screen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width for proper centering */
+  height: 100%; /* Full height to occupy the screen */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+  z-index: 100; /* Ensure it's above other content */
+}
+
+.menu-list {
+  list-style: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack items */
+  gap: 20px; /* Add spacing between items */
+}
+
+.menu-list li a {
+  text-decoration: none; /* Remove underline */
+  color: #a91d8d; /* Vibrant color for menu items */
+  font-family: "buttonFont", serif;
+  font-size: 32px; /* Larger font for a "main menu" look */
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #a91d8d; /* Darker shade on hover */
+  text-shadow: 0px 4px 6px rgba(169, 29, 141, 0.8); /* Glow effect on hover */
+}

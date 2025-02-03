@@ -2,6 +2,7 @@ import { useState, useEffect, memo, useCallback } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import Banner from "./Banner";
 import LoadSpinner from "./LoadSpinner";
+import "../css/Gallery.css"
 
 const Gallery = memo(({ photos }) => {
   const [model, setModel] = useState(false);

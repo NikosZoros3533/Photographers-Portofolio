@@ -1,16 +1,17 @@
-import HomeNavigator from "../components/HomeNavigator";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { useEffect } from "react";
+import Carousel from "../components/Carousel.jsx";
+import "../css/Home.css";
 
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const sizeIcons = "2rem"
+  const sizeIcons = "2rem";
   return (
     <>
       <div className="home-page section-1">
@@ -25,8 +26,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              
-                <FaFacebook className="menu-icon" size={sizeIcons}/>
+                <FaFacebook className="menu-icon" size={sizeIcons} />
               </a>
             </li>
             <li>
@@ -35,7 +35,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagram className="menu-icon" size={sizeIcons}/>
+                <FaInstagram className="menu-icon" size={sizeIcons} />
               </a>
             </li>
             <li>
@@ -44,7 +44,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTiktok className="menu-icon" size={sizeIcons}/>
+                <FaTiktok className="menu-icon" size={sizeIcons} />
               </a>
             </li>
             <li>
@@ -53,14 +53,14 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiGmail className="menu-icon" size={sizeIcons}/>
+                <SiGmail className="menu-icon" size={sizeIcons} />
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="home-page section-2">
-        <HomeNavigator />
+      <div className="home-page">
+        <Carousel />
       </div>
     </>
   );

@@ -1,0 +1,24 @@
+#banner {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgb(46, 31, 43);
+  background: linear-gradient(
+    86deg,
+    rgba(46, 31, 43, 1) 0%,
+    rgba(31, 11, 27, 1) 35%
+  );
+  /*background-color:#1f0b1b;*/
+}
+
+#banner h1 {
+  font-family: "bannerFont", serif;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #40e0d0;
+}
