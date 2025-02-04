@@ -1,34 +1,29 @@
+import React from 'react'
+import "../css/Footer.css"
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { useEffect } from "react";
-import "../css/Home.css";
+import Logo from "../assets/dioVeleLogo.png"
 
-export default function Home() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const sizeIcons = "2rem";
+export default function Footer() {
+    const sizeIcons = "1.3rem";
   return (
-    <>
-      <div className="home-page section-1">
-        <label id="title-home-page" className="cssanimation fadeIn">
-          DIOVELE
-        </label>
-        <div className="glass-box cssanimation fadeIn2">
-          <ul>
-            <li>
-              <a
+    <footer className="footer">
+      <p>
+        &copy; 2025 <span className="brand">DioVele</span>
+      </p>
+      <img src={Logo} alt="Logo" />
+
+
+      <nav>
+      <a
                 href="https://www.facebook.com/dionisis.belentakis?locale=el_GR"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaFacebook className="menu-icon" size={sizeIcons} />
               </a>
-            </li>
-            <li>
               <a
                 href="https://www.instagram.com/dio_vele/"
                 target="_blank"
@@ -36,8 +31,6 @@ export default function Home() {
               >
                 <FaInstagram className="menu-icon" size={sizeIcons} />
               </a>
-            </li>
-            <li>
               <a
                 href="https://www.tiktok.com/@diovele"
                 target="_blank"
@@ -45,8 +38,6 @@ export default function Home() {
               >
                 <FaTiktok className="menu-icon" size={sizeIcons} />
               </a>
-            </li>
-            <li>
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=lucimorn12@gmail.com"
                 target="_blank"
@@ -54,12 +45,7 @@ export default function Home() {
               >
                 <SiGmail className="menu-icon" size={sizeIcons} />
               </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="home-page">
-      </div>
-    </>
-  );
+      </nav>
+    </footer>
+  )
 }

@@ -9,6 +9,7 @@ import Shops from "./pages/Shops";
 import StudioPortraits from "./pages/StudioPortraits";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer"
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
