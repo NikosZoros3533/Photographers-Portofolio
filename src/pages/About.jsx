@@ -15,7 +15,7 @@ const About = () => {
           className="about-image"
         />
         <div className="about-text">
-          <h1 className="about-title">Dio Vele</h1>
+          <h1 className="about-title">Dionisis Velentakis</h1>
           <p className="about-description">
             Skyler Knutzen is a homegrown Iowan and now New York-based Director, DP, and Editor. 
             He is interested in capturing present memories that garner their importance in the future 

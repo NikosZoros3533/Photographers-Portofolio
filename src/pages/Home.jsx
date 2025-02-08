@@ -2,8 +2,8 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import Video from "../components/Video"
 import { useEffect } from "react";
+import Exhibition from "../components/Exhibition"
 import "../css/Home.css";
 
 export default function Home() {
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </div>
       <div className="home-page">
-        <Video />
+        <Exhibition />
       </div>
     </>
   );

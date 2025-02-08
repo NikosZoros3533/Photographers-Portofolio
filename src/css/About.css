@@ -1,37 +1,40 @@
 .about-container {
     max-width: 1000px;
-    margin: 10rem auto;
+    margin: 5rem auto;
     padding: 60px 50px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
   }
   
   .about-content {
     display: flex;
-    align-items: flex-start;
+    align-items:center;
     gap: 30px;
   }
   
   .about-image {
-    width: 45%;
+    width: 40%;
     height: auto;
+    border: 3px solid #ffe5ff;
     border-radius: 10px;
     flex-shrink: 0;
   }
   
   .about-text {
     flex: 1;
+    color: #ffe5ff;
   }
   
   .about-title {
     font-size: 3em;
     margin-bottom: 10px;
+    font-family: "titleFont", serif;
   }
   
 
   
   .about-description {
     margin-bottom: 10px;
+    font-family: "buttonFont", serif;
   }
   
   .about-contact{

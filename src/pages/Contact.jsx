@@ -40,7 +40,7 @@ export default function Contact() {
           />
         </div>
         <div className="input-box">
-          <label>Email adress:</label>
+          <label>Email address:</label>
           <input
             type="email"
             name="email"

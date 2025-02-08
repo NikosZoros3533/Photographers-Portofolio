@@ -36,7 +36,7 @@ export default function Menu() {
               <Link to="/about" onClick={toggleNavbar}>About</Link>
             </li>
             <li>
-              <Link to="/contact" onClick={toggleNavbar}>Contacts</Link>
+              <Link to="/contact" onClick={toggleNavbar}>Contact</Link>
             </li>
           </ul>
         </nav>
