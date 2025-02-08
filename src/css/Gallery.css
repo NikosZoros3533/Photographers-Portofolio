@@ -82,13 +82,7 @@
   image-rendering: auto;
 }
 
-@media (max-width: 768px) {
-  #banner {
-    margin-top: 12rem;
-    margin-bottom: 2rem;
-    background-color: black;
-  }
-}
+
 
 @media (max-width: 991px) {
   .gallery {

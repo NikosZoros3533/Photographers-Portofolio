@@ -1,6 +1,6 @@
 #banner {
   display: flex;
-  height: 5rem;
+  height: 7rem;
   width: 100%;
   margin-top: 8rem;
   margin-bottom: 0;
@@ -21,4 +21,27 @@
   font-size: 2rem;
   cursor: pointer;
   color: #40e0d0;
+}
+
+@media (max-width: 768px) {
+  #banner {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    background: black;
+  }
+}
+
+@media (max-width: 991px) {
+  #banner {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #banner {
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    background: black;
+  }
 }
