@@ -2,9 +2,12 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { useEffect } from "react";
-import Exhibition from "../components/Exhibition"
+import { useEffect, lazy, Suspense } from "react";
+//import Exhibition from "../components/Exhibition";
+import LoadSpinner from "../components/LoadSpinner.jsx";
 import "../css/Home.css";
+
+const Exhibition = lazy(() => import("../components/Exhibition.jsx"));
 
 export default function Home() {
   useEffect(() => {
@@ -60,7 +63,9 @@ export default function Home() {
         </div>
       </div>
       <div className="home-page">
-        <Exhibition />
+        <Suspense fallback={<LoadSpinner />}>
+          <Exhibition />
+        </Suspense>
       </div>
     </>
   );

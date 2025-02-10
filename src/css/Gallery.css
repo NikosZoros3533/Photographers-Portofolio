@@ -63,8 +63,6 @@
 }
 
 .gallery .pics {
-  /*-webkit-transition: all 350ms ease;
-    transition: all 350ms ease;*/
   transition: filter 350ms ease, box-shadow 350ms ease;
   cursor: pointer;
   margin-bottom: 12px;
@@ -72,14 +70,14 @@
 }
 
 .gallery .pics:hover {
-  /*filter: opacity(0.7);*/
-
-  filter: brightness(0.6); /* Darkens the image slightly */
+  filter: brightness(0.5); 
 }
 
 .photo-item {
   width: 100%;
-  image-rendering: auto;
+  image-rendering: smooth;
+  border: 1px solid rgba(169, 29, 141, 0.2);
+  border-radius: 15px;
 }
 
 

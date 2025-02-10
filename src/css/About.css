@@ -3,6 +3,8 @@
     margin: 5rem auto;
     padding: 60px 50px;
     line-height: 1.4;
+    border: 2px solid #ffe5ff;
+    border-radius: 10px;
   }
   
   .about-content {

@@ -17,7 +17,7 @@
 
 #title-home-page {
   font-size: 18rem;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   font-family: "titleFont", serif;
   line-height: 1;
@@ -89,7 +89,6 @@
 
 .glass-box ul li a {
   text-decoration: none;
-  color: white; /* Adjust color as needed */
   margin-left: 0.5rem;
 }
 
@@ -104,13 +103,14 @@
 
 @media (max-width: 1200px) {
   #title-home-page {
-    font-size: 10rem;
+    font-size: 13rem;
     font-weight: 400;
     letter-spacing: 0.4rem;
   }
   .glass-box {
-    width: 16rem;
+    width: 25rem;
     height: 10rem;
+    bottom: 20%;
   }
 }
 
@@ -122,19 +122,21 @@
   }
 
   .glass-box {
-    width: 16rem;
+    height: 8rem;
+    width: 45%;
+    bottom: 30%;
   }
 }
 
 @media (max-width: 768px) {
   #title-home-page {
-    font-size: 8rem;
+    font-size: 5.5rem;
     font-weight: 400;
     letter-spacing: 0.4rem;
   }
 
   .glass-box {
-    height: 10rem;
+    height: 8rem;
     width: 45%;
     bottom: 30%;
   }
@@ -151,7 +153,7 @@
 
   .glass-box {
     height: 8rem;
-    width: 45%;
+    width: 58%;
     bottom: 30%;
   }
 }

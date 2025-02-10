@@ -86,6 +86,7 @@ export default function Exhibition() {
 
   return (
     <div className="masonry-container">
+      <h1>You cant jump into the same river.</h1>
       {[...Array(rows)].map((_, rowIndex) => (
         <div
           key={rowIndex}

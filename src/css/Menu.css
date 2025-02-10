@@ -40,3 +40,19 @@
   color: #a91d8d; /* Darker shade on hover */
   text-shadow: 0px 4px 6px rgba(169, 29, 141, 0.8); /* Glow effect on hover */
 }
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .menu-list {
+    flex-direction: column; /* Stack links */
+    gap: 10px; /* Adjust spacing for smaller screens */
+  }
+  .menu-list li a {
+    font-size: 28px;
+  }
+  
+ 
+}
