@@ -16,7 +16,7 @@
 }
 
 #title-home-page {
-  font-size: 18rem;
+  font-size: 16rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: "titleFont", serif;
@@ -109,7 +109,7 @@
   }
   .glass-box {
     width: 25rem;
-    height: 10rem;
+    height: 7rem;
     bottom: 20%;
   }
 }
@@ -124,36 +124,33 @@
   .glass-box {
     height: 8rem;
     width: 45%;
-    bottom: 30%;
+    bottom: 34%;
   }
 }
 
 @media (max-width: 768px) {
   #title-home-page {
-    font-size: 5.5rem;
+    font-size: 6.5rem;
     font-weight: 400;
     letter-spacing: 0.4rem;
   }
 
   .glass-box {
-    height: 8rem;
+    height: 6rem;
     width: 45%;
-    bottom: 30%;
+    bottom: 34%;
   }
 }
 
 @media (max-width: 480px) {
   #title-home-page {
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 4.4rem;
+    font-weight: 300;
     letter-spacing: 0.4rem;
   }
-
-
-
   .glass-box {
-    height: 8rem;
+    height: 6rem;
     width: 58%;
-    bottom: 30%;
+    bottom: 34%;
   }
 }

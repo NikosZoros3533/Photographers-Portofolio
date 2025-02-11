@@ -64,15 +64,12 @@ export default function Exhibition() {
     rowRefs.current.forEach((row) => {
       if (!row) return;
 
-      const direction = -1; // All rows move left
+
       const speed = 0.3;
       let scrollAmount = 0;
 
-      const clone = row.innerHTML; // Duplicate content to create an infinite loop effect
-      row.innerHTML += clone;
-
       const scrollRow = () => {
-        scrollAmount += direction * speed;
+        scrollAmount -= speed;
         row.style.transform = `translateX(${scrollAmount}px)`;
 
         if (Math.abs(scrollAmount) >= row.scrollWidth / 2) {
@@ -86,7 +83,7 @@ export default function Exhibition() {
 
   return (
     <div className="masonry-container">
-      <h1>You cant jump into the same river.</h1>
+      <label>You cant jump into the same river.</label>
       {[...Array(rows)].map((_, rowIndex) => (
         <div
           key={rowIndex}
@@ -99,8 +96,9 @@ export default function Exhibition() {
               <img
                 key={index}
                 src={imgSrc}
-                alt="Masonry"
+                alt={index+1}
                 className="masonry-image"
+                loading="lazy"
               />
             ))}
         </div>
