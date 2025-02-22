@@ -1,4 +1,5 @@
 import "../css/Contact.css";
+import Swal from "sweetalert2";
 
 export default function Contact() {
   //replace "YOUR_ACCESS_KEY" with the token got from this page https://web3forms.com/platforms/react-contact-form#step__1
@@ -6,7 +7,7 @@ export default function Contact() {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "01ccb5e9-d330-4fde-b02c-52183721e8a6");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -15,13 +16,24 @@ export default function Contact() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json"
+        Accept: "application/json",
       },
-      body: json
+      body: json,
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      Swal.fire({
+        title: "Message was sent succesfully.",
+        width: 600,
+        icon: "success",
+        padding: "4em",
+        color: "#ffe5ff",
+        background: "#000000",
+        backdrop: `
+        rgba(255,229,255,0.2)
+      `,
+      });
+      
     }
   };
 

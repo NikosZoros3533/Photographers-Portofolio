@@ -25,7 +25,7 @@ import Img37 from "../assets/studio-portraits/New1.jpg";
 import Img38 from "../assets/studio-portraits/New3.jpg";
 import Img40 from "../assets/studio-portraits/New5.jpg";
 import Img43 from "../assets/studio-portraits/DSC03694.jpg";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const images = [
   Img7,
@@ -83,7 +83,7 @@ export default function Exhibition() {
 
   return (
     <div className="masonry-container">
-      <label>You cant jump into the same river.</label>
+      <label>Be yourself. Everyone else is already taken.</label>
       {[...Array(rows)].map((_, rowIndex) => (
         <div
           key={rowIndex}

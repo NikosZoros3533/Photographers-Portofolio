@@ -16,7 +16,7 @@
 }
 
 #title-home-page {
-  font-size: 16rem;
+  font-size: 20rem;
   font-weight: 400;
   text-transform: uppercase;
   font-family: "titleFont", serif;
@@ -53,10 +53,10 @@
 
 .glass-box {
   height: 10rem;
-  width: 35%;
+  width: 30%;
   position: absolute;
-  bottom: 17%;
-  left: 4rem;
+  bottom: 25%;
+  left: 15%;
   /*background-color: #a91d8d;
     border-radius: 16px;*/
   background: rgba(169, 29, 141, 0.39);
@@ -101,7 +101,7 @@
   transform: scale(1.5);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #title-home-page {
     font-size: 13rem;
     font-weight: 400;
