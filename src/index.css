@@ -4,17 +4,20 @@
 
 @font-face {
   font-family: "titleFont";
-  src: url("/src/assets/fonts/ClashDisplay-Bold.otf") format("woff2");
+  src: url("/src/assets/fonts/ClashDisplay-Bold.woff") format("woff2"),
+    url("/src/assets/fonts/ClashDisplay-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "buttonFont";
-  src: url("/src/assets/fonts/Chillax-Semibold.otf") format("woff2");
+  src: url("/src/assets/fonts/Chillax-Semibold.woff2") format("woff2"),
+    url("/src/assets/fonts/Chillax-Semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "bannerFont";
-  src: url("/src/assets/fonts/CabinetGrotesk-Variable.ttf") format("woff2");
+  src: url("/src/assets/fonts/CabinetGrotesk-Variable.woff2") format("woff2"),
+    url("/src/assets/fonts/CabinetGrotesk-Variable.woff") format("woff");
 }
 
 html {
@@ -39,5 +42,3 @@ body {
   background-size: cover;
   background-position: 50% 40%;
 }
-
-

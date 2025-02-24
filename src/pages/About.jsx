@@ -1,6 +1,6 @@
 import "../css/About.css"; // Import the CSS file
 import { useState, useEffect } from "react";
-import heroIcon from "../assets/heroIcon.jpg";
+import heroIcon from "/heroIcon.webp";
 
 const About = () => {
   const [language, setLanguage] = useState("eng");
