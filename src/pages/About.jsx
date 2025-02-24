@@ -31,31 +31,37 @@ const About = () => {
             <>
               <h1 className="about-title">Dionisis Velentakis</h1>
               <p className="about-description">
-                Hello! I'm a passionate photographer based in Ptolemaida, also
-                capturing moments in the vibrant city of Thessaloniki. With a
-                love for storytelling through my lens, I specialize in
-                landscapes that showcase the beauty of our surroundings,
-                heartfelt portraits that reveal true emotions, and memorable
-                couple sessions, including weddings that capture love in its
-                purest form. I also collaborate with local businesses, helping
-                them tell their unique stories through impactful imagery.
+                Hello! I’m Dionisis Velentakis, a passionate photographer with a
+                keen eye for capturing the essence of my subjects. Based in
+                Greece, I’ve dedicated my career to exploring the world through
+                the lens, creating images that tell compelling stories and evoke
+                emotions
               </p>
               <p className="about-description">
-                I shoot with [Camera Model] paired with [Lens Model], tools that
-                allow me to bring my creative vision to life. My dedication to
-                the craft has been recognized with a 3rd place award at
-                [Competition Name], a moment that fueled my passion even
-                further. But beyond accolades, my greatest joy comes from
-                freezing moments in time, turning them into memories that last a
-                lifetime.
+                Throughout my journey in photography, I’ve had the honor of
+                winning two prestigious competitions in Greece, showcasing my
+                work on both a national and international stage. I’m proud to
+                say that I was also recognized among the top 50 photographers in
+                Greece for my male portrait work, an achievement that inspires
+                me to continuously push my creative boundaries.
               </p>
               <p className="about-description">
-                Whether I'm chasing the perfect light in a serene landscape or
-                capturing the joyous laughter of a couple in love, I aim to
-                create photographs that resonate and inspire.
+                Photography is not just a profession for me; it’s a way of life.
+                My style is characterized by a blend of artistic vision and
+                technical precision, allowing me to create striking and
+                memorable portraits. I believe that every photograph has the
+                power to connect people, and I strive to capture those candid
+                moments that reveal the true spirit of my subjects.
               </p>
               <p className="about-description">
-                Let’s create something beautiful together.
+                When I’m not behind the camera, you can find me exploring new
+                landscapes or spending time with fellow artists, always seeking
+                inspiration in the beauty that surrounds us.
+              </p>
+              <p className="about-description">
+                I invite you to explore my portfolio and witness the world
+                through my eyes. If you’re interested in collaborating or just
+                want to connect, feel free to reach out!
               </p>
             </>
           )}
@@ -63,34 +69,42 @@ const About = () => {
             <>
               <h1 className="about-title">Διονύσης Βελεντάκης</h1>
               <p className="about-description-el">
-                Είμαι φωτογράφος με έδρα την Πτολεμαΐδα και δραστηριοποιούμαι
-                επίσης στη ζωντανή πόλη της Θεσσαλονίκης. Μέσα από τον φακό μου,
-                αγαπώ να αφηγούμαι ιστορίες – από τοπία που αναδεικνύουν τη
-                μαγεία του περιβάλλοντος, μέχρι πορτρέτα που αποτυπώνουν
-                αυθεντικά συναισθήματα. Ειδικεύομαι επίσης σε φωτογραφίσεις
-                ζευγαριών και γάμων, αποθανατίζοντας τον έρωτα στις πιο όμορφες
-                στιγμές του. Παράλληλα, συνεργάζομαι με τοπικές επιχειρήσεις,
-                βοηθώντας τες να προβάλουν την ταυτότητά τους μέσα από
-                εντυπωσιακές εικόνες.
+                Γεια σας! Είμαι ο Διονύσης Βελέντακης, ένας παθιασμένος
+                φωτογράφος με οξυμένο βλέμμα για την αποτύπωση της ουσίας των
+                θεμάτων μου. Με έδρα την Ελλάδα, έχω αφιερώσει την καριέρα μου
+                στην εξερεύνηση του κόσμου μέσω του φακού, δημιουργώντας εικόνες
+                που διηγούνται συναρπαστικές ιστορίες και προκαλούν
+                συναισθήματα.
               </p>
               <p className="about-description-el">
-                Χρησιμοποιώ [Μοντέλο Κάμερας] και [Μοντέλο Φακού], εξοπλισμό που
-                μου επιτρέπει να δίνω ζωή στη δημιουργική μου οπτική. Η αφοσίωσή
-                μου στη φωτογραφία έχει αναγνωριστεί με τη διάκριση της 3ης
-                θέσης στον διαγωνισμό [Όνομα Διαγωνισμού], μια στιγμή που μου
-                έδωσε ακόμα περισσότερη ώθηση να εξελιχθώ. Όμως, πέρα από τις
-                διακρίσεις, η μεγαλύτερη ικανοποίηση έρχεται όταν καταφέρνω να
-                "παγώνω" στιγμές και να τις μετατρέπω σε αναμνήσεις που μένουν
-                για πάντα.
+                Κατά τη διάρκεια της πορείας μου στη φωτογραφία, είχα την τιμή
+                να κερδίσω δύο καταξιωμένους διαγωνισμούς στην Ελλάδα,
+                προβάλλοντας τη δουλειά μου τόσο σε εθνικό όσο και σε διεθνές
+                επίπεδο. Είμαι περήφανος που αναγνωρίστηκα επίσης ανάμεσα στους
+                50 καλύτερους φωτογράφους στην Ελλάδα για τη δουλειά μου στη
+                φωτογράφιση ανδρικών πορτραίτων, μια επιτυχία που με εμπνέει να
+                προχωρώ συνεχώς τα δημιουργικά μου όρια.
               </p>
               <p className="about-description-el">
-                Από το να κυνηγάω το ιδανικό φως σ’ ένα τοπίο μέχρι το να
-                απαθανατίζω το γέλιο ενός ερωτευμένου ζευγαριού, στόχος μου
-                είναι να δημιουργώ εικόνες που αγγίζουν την ψυχή.
+                Η φωτογραφία δεν είναι απλώς επάγγελμα για μένα, είναι τρόπος
+                ζωής. Το στυλ μου χαρακτηρίζεται από μια σύνθεση καλλιτεχνικής
+                οπτικής και τεχνικής ακρίβειας, που μου επιτρέπει να δημιουργώ
+                εντυπωσιακά και αξέχαστα πορτραίτα. Πιστεύω ότι κάθε φωτογραφία
+                έχει τη δύναμη να συνδέει ανθρώπους και προσπαθώ να αποτυπώνω
+                εκείνες τις αυθόρμητες στιγμές που αποκαλύπτουν το αληθινό
+                πνεύμα των θεμάτων μου.
               </p>
               <p className="about-description-el">
-                Ανυπομονώ να γνωριστούμε και να φτιάξουμε μαζί κάτι όμορφο!
-                </p>
+                Όταν δεν βρίσκομαι πίσω από την κάμερα, μπορείτε να με βρείτε να
+                εξερευνώ νέα τοπία ή να περνάω χρόνο με άλλους καλλιτέχνες,
+                πάντα αναζητώντας έμπνευση στην ομορφιά που μας περιβάλλει.
+              </p>
+              <p className="about-description-el">
+                Σας προσκαλώ να εξερευνήσετε το πορτφόλιο μου και να δείτε τον
+                κόσμο μέσα από τα μάτια μου. Αν ενδιαφέρεστε να συνεργαστούμε ή
+                απλώς θέλετε να συνδεθείτε, μη διστάσετε να επικοινωνήσετε μαζί
+                μου!
+              </p>
             </>
           )}
 

@@ -54,7 +54,10 @@
 }
 
 .about-description-el {
-  margin-bottom: 10px;
+  font-family: "bannerFont", serif;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02rem;
 }
 
 
