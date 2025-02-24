@@ -3,7 +3,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { useEffect, lazy, Suspense } from "react";
-//import Exhibition from "../components/Exhibition";
 import LoadSpinner from "../components/LoadSpinner.jsx";
 import "../css/Home.css";
 

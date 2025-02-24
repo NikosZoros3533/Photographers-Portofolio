@@ -1,22 +1,23 @@
-import { useEffect } from "react";
-import Img1 from "../assets/couples/DSC02231.jpg";
-import Img2 from "../assets/couples/DSC03213.jpg";
-import Img3 from "../assets/couples/edited-1.jpg";
-import Img4 from "../assets/couples/edited-2.jpg";
-import Img5 from "../assets/couples/edited.jpg";
-import Img6 from "../assets/couples/New1.jpg";
-import Img7 from "../assets/couples/New2.jpg";
-import Img8 from "../assets/couples/New3.jpg";
-import Img9 from "../assets/couples/New4.jpg";
-import Img10 from "../assets/couples/New5.jpg";
-import Img11 from "../assets/couples/New6.jpg";
-import Img12 from "../assets/couples/New7.jpg";
-import Img13 from "../assets/couples/New8.jpg";
-import Img14 from "../assets/couples/New9.jpg";
-import Img15 from "../assets/couples/New10.jpg";
-import Img16 from "../assets/couples/New11.jpg";
+import Img1 from "../assets/couples/DSC02231.webp";
+import Img2 from "../assets/couples/DSC03213.webp";
+import Img3 from "../assets/couples/edited-1.webp";
+import Img4 from "../assets/couples/edited-2.webp";
+import Img5 from "../assets/couples/edited.webp";
+import Img6 from "../assets/couples/New1.webp";
+import Img7 from "../assets/couples/New2.webp";
+import Img8 from "../assets/couples/New3.webp";
+import Img9 from "../assets/couples/New4.webp";
+import Img10 from "../assets/couples/New5.webp";
+import Img11 from "../assets/couples/New6.webp";
+import Img12 from "../assets/couples/New7.webp";
+import Img13 from "../assets/couples/New8.webp";
+import Img14 from "../assets/couples/New9.webp";
+import Img15 from "../assets/couples/New10.webp";
+import Img16 from "../assets/couples/New11.webp";
 
-import Gallery from "../components/Gallery";
+// import Gallery from "../components/Gallery";
+import { useEffect, lazy, Suspense } from "react";
+import LoadSpinner from "../components/LoadSpinner";
 
 let photos = [
   {
@@ -85,14 +86,16 @@ let photos = [
   },
 ];
 
+const Gallery = lazy(() => import("../components/Gallery"));
+
 export default function Couples() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div>
+    <Suspense fallback={<LoadSpinner />}>
       <Gallery photos={photos} />
-    </div>
+    </Suspense>
   );
 }

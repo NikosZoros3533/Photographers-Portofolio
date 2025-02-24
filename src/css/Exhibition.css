@@ -72,3 +72,13 @@
     padding: 6px;
   }
 }
+
+@media (max-width: 380px) {
+  .masonry-container{
+    height: 50%;
+  }
+  .masonry-container label {
+    font-size: 0.7rem;
+    padding: 6px;
+  }
+}

@@ -44,3 +44,12 @@
 }
 
 
+@media (max-width: 380px) {
+  .menu-list{
+    gap: 10px;
+    margin-top: 5rem;
+  }
+  .menu-list li a{
+    font-size: 0.5rem;
+  }
+}

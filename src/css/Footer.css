@@ -23,3 +23,10 @@
   color: #40e0d0;
   margin-left: 0.5rem;
 }
+
+@media (max-width: 380px) {
+  .footer a{
+    height: 10px;
+    width: 10px;
+  }
+}

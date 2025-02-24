@@ -1,14 +1,14 @@
-import { useState, useEffect, memo, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import Banner from "./Banner";
-import LoadSpinner from "./LoadSpinner";
-import "../css/Gallery.css"
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "../css/Gallery.css";
 
-const Gallery = memo(({ photos }) => {
+const Gallery = ({ photos }) => {
+
   const [model, setModel] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState(null);
-  const [show, setShow] = useState("hidden");
-  const [showSpinner, setShowSpinner] = useState(false);
 
   const getImg = useCallback(function getImg(imgSrc) {
     if (tempImgSrc !== imgSrc) {
@@ -16,7 +16,7 @@ const Gallery = memo(({ photos }) => {
     }
 
     setModel(true);
-  });
+  },[tempImgSrc]);
 
   function handleKeyDown(event) {
     if (event.key === "Escape") {
@@ -26,11 +26,12 @@ const Gallery = memo(({ photos }) => {
     }
   }
 
-
   function navigateImages(direction) {
     if (!tempImgSrc) return;
 
-    const currentIndex = photos.findIndex((photo) => photo.imgSrc === tempImgSrc);
+    const currentIndex = photos.findIndex(
+      (photo) => photo.imgSrc === tempImgSrc
+    );
 
     if (direction === "ArrowRight" && currentIndex < photos.length - 1) {
       setTempImgSrc(photos[currentIndex + 1].imgSrc);
@@ -46,22 +47,13 @@ const Gallery = memo(({ photos }) => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [model,tempImgSrc]);
-
-  useEffect(() => {
-    setShowSpinner(true);
-    const timer = setTimeout(() => {
-      setShow("");
-      setShowSpinner(false);
-    }, 800);
-    return () => clearTimeout(timer);
-  }, []);
+  }, [model, tempImgSrc]);
 
   return (
     <>
       <Banner />
       <div className={model ? "model open" : "model"}>
-        {tempImgSrc && <img src={tempImgSrc} alt="Expanded View"/>}
+        {tempImgSrc && <img src={tempImgSrc} alt="Expanded View" />}
         <CloseIcon
           onClick={() => setModel(false)}
           onKeyDown={(e) => handleKeyDown(e)}
@@ -70,8 +62,7 @@ const Gallery = memo(({ photos }) => {
           tabIndex="0"
         />
       </div>
-      {showSpinner && <LoadSpinner />}
-      <div className="gallery" id={show}>
+      <div className="gallery">
         {photos.map((photo) => {
           return (
             <div
@@ -79,9 +70,10 @@ const Gallery = memo(({ photos }) => {
               key={photo.id}
               onClick={() => getImg(photo.imgSrc)}
             >
-              <img
+              <LazyLoadImage
                 src={photo.imgSrc}
                 alt={`photo ${photo.id}`}
+                effect="blur"
                 loading="lazy"
                 className="photo-item"
               />
@@ -91,6 +83,6 @@ const Gallery = memo(({ photos }) => {
       </div>
     </>
   );
-});
+};
 
 export default Gallery;

@@ -1,68 +1,68 @@
-import Img1 from "../assets/shops/Coctail1.jpg";
-import Img2 from "../assets/shops/Coctail2.jpg";
-import Img3 from "../assets/shops/Coctail3.jpg";
-import Img4 from "../assets/shops/Coctail4.jpg";
-import Img5 from "../assets/shops/Coctail5.jpg";
-import Img6 from "../assets/shops/Coctail6.jpg";
-import Img7 from "../assets/shops/Coctail7.jpg";
-import Img8 from "../assets/shops/Food1.jpg";
-import Img9 from "../assets/shops/Food2.jpg";
-import Img10 from "../assets/shops/Food3.jpg";
-import Img11 from "../assets/shops/Food4.jpg";
-import Img12 from "../assets/shops/Food5.jpg";
-import Img13 from "../assets/shops/Food6.jpg";
-import Img14 from "../assets/shops/Food7.jpg";
-import Img15 from "../assets/shops/Food8.jpg";
-import Img16 from "../assets/shops/Food9.jpg";
-import Img17 from "../assets/shops/Food10.jpg";
-import Img18 from "../assets/shops/Food11.jpg";
-import Img19 from "../assets/shops/Food12.jpg";
-import Img20 from "../assets/shops/Food13.jpg";
-import Img21 from "../assets/shops/Food14.jpg";
-import Img22 from "../assets/shops/Food15.jpg";
-import Img23 from "../assets/shops/Food16.jpg";
-import Img24 from "../assets/shops/Food17.jpg";
-import Img25 from "../assets/shops/Food18.jpg";
-import Img26 from "../assets/shops/Food19.jpg";
-import Img27 from "../assets/shops/Food20.jpg";
-import Img28 from "../assets/shops/Food21.jpg";
-import Img29 from "../assets/shops/Food22.jpg";
-import Img30 from "../assets/shops/Food23.jpg";
-import Img31 from "../assets/shops/Food24.jpg";
-import Img32 from "../assets/shops/Food25.jpg";
-import Img33 from "../assets/shops/Food26.jpg";
-import Img34 from "../assets/shops/Food27.jpg";
-import Img35 from "../assets/shops/Food28.jpg";
-import Img36 from "../assets/shops/Food29.jpg";
-import Img37 from "../assets/shops/Food30.jpg";
-import Img38 from "../assets/shops/Food31.jpg";
-import Img39 from "../assets/shops/Food32.jpg";
-import Img40 from "../assets/shops/Food33.jpg";
-import Img41 from "../assets/shops/Food34.jpg";
-import Img42 from "../assets/shops/Food35.jpg";
-import Img43 from "../assets/shops/Food36.jpg";
-import Img44 from "../assets/shops/Food37.jpg";
-import Img45 from "../assets/shops/Food38.jpg";
-import Img46 from "../assets/shops/Food39.jpg";
-import Img47 from "../assets/shops/Food40.jpg";
-import Img48 from "../assets/shops/Food41.jpg";
-import Img49 from "../assets/shops/New1.jpg";
-import Img50 from "../assets/shops/New2.jpg";
-import Img51 from "../assets/shops/New3.jpg";
-import Img52 from "../assets/shops/New4.jpg";
-import Img53 from "../assets/shops/New5.jpg";
-import Img54 from "../assets/shops/New6.jpg";
-import Img55 from "../assets/shops/New7.jpg";
-import Img56 from "../assets/shops/New8.jpg";
-import Img57 from "../assets/shops/New9.jpg";
-import Img58 from "../assets/shops/New10.jpg";
-import Img59 from "../assets/shops/New11.jpg";
-import Img60 from "../assets/shops/New12.jpg";
-import Img61 from "../assets/shops/New13.jpg";
-import Img62 from "../assets/shops/New14.jpg";
+import Img1 from "../assets/shops/Coctail1.webp";
+import Img2 from "../assets/shops/Coctail2.webp";
+import Img3 from "../assets/shops/Coctail3.webp";
+import Img4 from "../assets/shops/Coctail4.webp";
+import Img5 from "../assets/shops/Coctail5.webp";
+import Img6 from "../assets/shops/Coctail6.webp";
+import Img7 from "../assets/shops/Coctail7.webp";
+import Img8 from "../assets/shops/Food1.webp";
+import Img9 from "../assets/shops/Food2.webp";
+import Img10 from "../assets/shops/Food3.webp";
+import Img11 from "../assets/shops/Food4.webp";
+import Img12 from "../assets/shops/Food5.webp";
+import Img13 from "../assets/shops/Food6.webp";
+import Img14 from "../assets/shops/Food7.webp";
+import Img15 from "../assets/shops/Food8.webp";
+import Img16 from "../assets/shops/Food9.webp";
+import Img17 from "../assets/shops/Food10.webp";
+import Img18 from "../assets/shops/Food11.webp";
+import Img19 from "../assets/shops/Food12.webp";
+import Img20 from "../assets/shops/Food13.webp";
+import Img21 from "../assets/shops/Food14.webp";
+import Img22 from "../assets/shops/Food15.webp";
+import Img23 from "../assets/shops/Food16.webp";
+import Img24 from "../assets/shops/Food17.webp";
+import Img25 from "../assets/shops/Food18.webp";
+import Img26 from "../assets/shops/Food19.webp";
+import Img27 from "../assets/shops/Food20.webp";
+import Img28 from "../assets/shops/Food21.webp";
+import Img29 from "../assets/shops/Food22.webp";
+import Img30 from "../assets/shops/Food23.webp";
+import Img31 from "../assets/shops/Food24.webp";
+import Img32 from "../assets/shops/Food25.webp";
+import Img33 from "../assets/shops/Food26.webp";
+import Img34 from "../assets/shops/Food27.webp";
+import Img35 from "../assets/shops/Food28.webp";
+import Img36 from "../assets/shops/Food29.webp";
+import Img37 from "../assets/shops/Food30.webp";
+import Img38 from "../assets/shops/Food31.webp";
+import Img39 from "../assets/shops/Food32.webp";
+import Img40 from "../assets/shops/Food33.webp";
+import Img41 from "../assets/shops/Food34.webp";
+import Img42 from "../assets/shops/Food35.webp";
+import Img43 from "../assets/shops/Food36.webp";
+import Img44 from "../assets/shops/Food37.webp";
+import Img45 from "../assets/shops/Food38.webp";
+import Img46 from "../assets/shops/Food39.webp";
+import Img47 from "../assets/shops/Food40.webp";
+import Img48 from "../assets/shops/Food41.webp";
+import Img49 from "../assets/shops/New1.webp";
+import Img50 from "../assets/shops/New2.webp";
+import Img51 from "../assets/shops/New3.webp";
+import Img52 from "../assets/shops/New4.webp";
+import Img53 from "../assets/shops/New5.webp";
+import Img54 from "../assets/shops/New6.webp";
+import Img55 from "../assets/shops/New7.webp";
+import Img56 from "../assets/shops/New8.webp";
+import Img57 from "../assets/shops/New9.webp";
+import Img58 from "../assets/shops/New10.webp";
+import Img59 from "../assets/shops/New11.webp";
+import Img60 from "../assets/shops/New12.webp";
+import Img61 from "../assets/shops/New13.webp";
+import Img62 from "../assets/shops/New14.webp";
 
-import Gallery from "../components/Gallery";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
+import LoadSpinner from "../components/LoadSpinner";
 
 let photos = [
   {
@@ -314,13 +314,16 @@ let photos = [
     imgSrc: Img62,
   },
 ];
+
+const Gallery = lazy(() => import("../components/Gallery"));
+
 export default function Shops() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <Suspense fallback={<LoadSpinner />}>
       <Gallery photos={photos} />
-    </div>
+    </Suspense>
   );
 }

@@ -1,28 +1,28 @@
-import { useEffect } from "react";
-import Img1 from "../assets/studio-portraits/DSC03544.jpg";
-import Img2 from "../assets/studio-portraits/DSC03572.jpg";
-import Img3 from "../assets/studio-portraits/DSC03694.jpg";
-import Img4 from "../assets/studio-portraits/DSC04703.jpg";
-import Img5 from "../assets/studio-portraits/DSC04838.jpg";
-import Img6 from "../assets/studio-portraits/DSC05094.jpg";
-import Img7 from "../assets/studio-portraits/DSC05270.jpg";
-import Img8 from "../assets/studio-portraits/DSC05276.jpg";
-import Img9 from "../assets/studio-portraits/DSC06253.jpg";
-import Img10 from "../assets/studio-portraits/DSC06324.jpg";
-import Img11 from "../assets/studio-portraits/DSC06379.jpg";
-import Img12 from "../assets/studio-portraits/DSC06436.jpg";
-import Img13 from "../assets/studio-portraits/DSC06492.jpg";
-import Img14 from "../assets/studio-portraits/DSC06542.jpg";
-import Img15 from "../assets/studio-portraits/DSC06804.jpg";
-import Img16 from "../assets/studio-portraits/New1.jpg";
-import Img17 from "../assets/studio-portraits/New2.jpg";
-import Img18 from "../assets/studio-portraits/New3.jpg";
-import Img19 from "../assets/studio-portraits/New4.jpg";
-import Img20 from "../assets/studio-portraits/New5.jpg";
-import Img21 from "../assets/studio-portraits/New6.jpg";
-import Img22 from "../assets/studio-portraits/New7.jpg";
-import Img23 from "../assets/studio-portraits/New8.jpg";
-import Gallery from "../components/Gallery";
+import { useEffect, lazy, Suspense } from "react";
+import Img1 from "../assets/studio-portraits/DSC03544.webp";
+import Img2 from "../assets/studio-portraits/DSC03572.webp";
+import Img3 from "../assets/studio-portraits/DSC03694.webp";
+import Img4 from "../assets/studio-portraits/DSC04703.webp";
+import Img5 from "../assets/studio-portraits/DSC04838.webp";
+import Img6 from "../assets/studio-portraits/DSC05094.webp";
+import Img7 from "../assets/studio-portraits/DSC05270.webp";
+import Img8 from "../assets/studio-portraits/DSC05276.webp";
+import Img9 from "../assets/studio-portraits/DSC06253.webp";
+import Img10 from "../assets/studio-portraits/DSC06324.webp";
+import Img11 from "../assets/studio-portraits/DSC06379.webp";
+import Img12 from "../assets/studio-portraits/DSC06436.webp";
+import Img13 from "../assets/studio-portraits/DSC06492.webp";
+import Img14 from "../assets/studio-portraits/DSC06542.webp";
+import Img15 from "../assets/studio-portraits/DSC06804.webp";
+import Img16 from "../assets/studio-portraits/New1.webp";
+import Img17 from "../assets/studio-portraits/New2.webp";
+import Img18 from "../assets/studio-portraits/New3.webp";
+import Img19 from "../assets/studio-portraits/New4.webp";
+import Img20 from "../assets/studio-portraits/New5.webp";
+import Img21 from "../assets/studio-portraits/New6.webp";
+import Img22 from "../assets/studio-portraits/New7.webp";
+import Img23 from "../assets/studio-portraits/New8.webp";
+import LoadSpinner from "../components/LoadSpinner";
 
 let photos = [
   {
@@ -118,14 +118,14 @@ let photos = [
     imgSrc: Img23,
   },
 ];
-
+const Gallery = lazy(() => import("../components/Gallery"));
 export default function StudioPortraits() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <Suspense fallback={<LoadSpinner />}>
       <Gallery photos={photos} />
-    </div>
+    </Suspense>
   );
 }

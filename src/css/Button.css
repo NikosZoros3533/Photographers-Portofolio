@@ -7,7 +7,7 @@
     background-color: black;
     color: #a91d8d;
     border: 2px solid #a91d8d;
-    padding: 18px 30px;
+    padding: 1.3rem 3rem;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -31,4 +31,12 @@
     transform: translateX(-50%) scale(1.1);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
     letter-spacing: 8px;
+  }
+
+
+  @media (max-width: 380px) {
+    .toggle-button {
+      font-size: 1rem;
+      padding: 6px;
+    }
   }
