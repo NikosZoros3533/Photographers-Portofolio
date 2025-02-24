@@ -1,21 +1,21 @@
-import Img1 from "../assets/couples/DSC02231.webp";
-import Img2 from "../assets/couples/DSC03213.webp";
-import Img3 from "../assets/couples/edited-1.webp";
-import Img4 from "../assets/couples/edited-2.webp";
-import Img5 from "../assets/couples/edited.webp";
-import Img6 from "../assets/couples/New1.webp";
-import Img7 from "../assets/couples/New2.webp";
-import Img8 from "../assets/couples/New3.webp";
-import Img9 from "../assets/couples/New4.webp";
-import Img10 from "../assets/couples/New5.webp";
-import Img11 from "../assets/couples/New6.webp";
-import Img12 from "../assets/couples/New7.webp";
-import Img13 from "../assets/couples/New8.webp";
-import Img14 from "../assets/couples/New9.webp";
-import Img15 from "../assets/couples/New10.webp";
-import Img16 from "../assets/couples/New11.webp";
+import Img1 from "/couples/DSC02231.webp";
+import Img2 from "/couples/DSC03213.webp";
+import Img3 from "/couples/edited-1.webp";
+import Img4 from "/couples/edited-2.webp";
+import Img5 from "/couples/edited.webp";
+import Img6 from "/couples/New1.webp";
+import Img7 from "/couples/New2.webp";
+import Img8 from "/couples/New3.webp";
+import Img9 from "/couples/New4.webp";
+import Img10 from "/couples/New5.webp";
+import Img11 from "/couples/New6.webp";
+import Img12 from "/couples/New7.webp";
+import Img13 from "/couples/New8.webp";
+import Img14 from "/couples/New9.webp";
+import Img15 from "/couples/New10.webp";
+import Img16 from "/couples/New11.webp";
 
-// import Gallery from "../components/Gallery";
+
 import { useEffect, lazy, Suspense } from "react";
 import LoadSpinner from "../components/LoadSpinner";
 
