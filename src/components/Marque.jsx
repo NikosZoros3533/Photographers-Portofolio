@@ -1,4 +1,3 @@
-import "../css/Exhibition.css";
 import Img7 from "/couples/New6.webp";
 import Img10 from "/couples/New9.webp";
 import Img11 from "/couples/New10.webp";
@@ -25,7 +24,9 @@ import Img37 from "/studio-portraits/New1.webp";
 import Img38 from "/studio-portraits/New3.webp";
 import Img40 from "/studio-portraits/New5.webp";
 import Img43 from "/studio-portraits/DSC03694.webp";
-import { useEffect, useRef } from "react";
+import Marquee from "react-fast-marquee";
+import "../css/Marque.css";
+import { useMemo } from "react";
 
 const images = [
   Img7,
@@ -55,53 +56,108 @@ const images = [
   Img40,
   Img43,
 ];
+const images2 = [
+  Img10,
+  Img13,
+  Img16,
+  Img18,
+  Img11,
+  Img17,
+  Img7,
+  Img19,
+  Img14,
+  Img24,
+  Img21,
+  Img20,
+  Img22,
+  Img33,
+  Img25,
+  Img29,
+  Img30,
+  Img38,
+  Img32,
+  Img34,
+  Img43,
+  Img40,
+  Img28,
+  Img36,
+  Img35,
+  Img37,
+];
+const images3 = [
+  Img11,
+  Img7,
+  Img24,
+  Img17,
+  Img16,
+  Img18,
+  Img19,
+  Img21,
+  Img20,
+  Img22,
+  Img25,
+  Img38,
+  Img14,
+  Img28,
+  Img10,
+  Img13,
+  Img32,
+  Img29,
+  Img43,
+  Img35,
+  Img40,
+  Img37,
+  Img30,
+  Img33,
+  Img34,
+  Img36,
+];
+const images4 = [
+  Img16,
+  Img13,
+  Img19,
+  Img21,
+  Img20,
+  Img7,
+  Img14,
+  Img43,
+  Img10,
+  Img22,
+  Img11,
+  Img24,
+  Img18,
+  Img28,
+  Img30,
+  Img35,
+  Img25,
+  Img38,
+  Img17,
+  Img40,
+  Img33,
+  Img37,
+  Img32,
+  Img34,
+  Img36,
+  Img29,
+];
 
-export default function Exhibition() {
-  const rows = 4;
-  const rowRefs = useRef([]);
-
-  useEffect(() => {
-    rowRefs.current.forEach((row) => {
-      if (!row) return;
-
-
-      const speed = 0.3;
-      let scrollAmount = 0;
-
-      const scrollRow = () => {
-        scrollAmount -= speed;
-        row.style.transform = `translateX(${scrollAmount}px)`;
-
-        if (Math.abs(scrollAmount) >= row.scrollWidth / 2) {
-          scrollAmount = 0; // Reset for a seamless loop
-        }
-        requestAnimationFrame(scrollRow);
-      };
-      scrollRow();
-    });
-  }, []);
-
+const imageArrays = [images, images2, images3, images4];
+export default function Marque() {
   return (
-    <div className="masonry-container">
+    <div className="marque-container">
       <label>Be yourself. Everyone else is already taken.</label>
-      {[...Array(rows)].map((_, rowIndex) => (
-        <div
-          key={rowIndex}
-          className="masonry-row"
-          ref={(el) => (rowRefs.current[rowIndex] = el)}
-        >
-          {[...images]
-            .sort(() => Math.random() - 0.5)
-            .map((imgSrc, index) => (
-              <img
-                key={index}
-                src={imgSrc}
-                alt={index+1}
-                className="masonry-image"
-                loading="lazy"
-              />
-            ))}
-        </div>
+      {imageArrays.map((imageArray, index) => (
+        <Marquee autoFill={true} className="marque-row" key={index}>
+          {imageArray.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt="image"
+              className="marque-image"
+              loading="lazy"
+            />
+          ))}
+        </Marquee>
       ))}
     </div>
   );

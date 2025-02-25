@@ -6,7 +6,7 @@ import { useEffect, lazy, Suspense } from "react";
 import LoadSpinner from "../components/LoadSpinner.jsx";
 import "../css/Home.css";
 
-const Exhibition = lazy(() => import("../components/Exhibition.jsx"));
+const Marque = lazy(() => import("../components/Marque.jsx"));
 
 export default function Home() {
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function Home() {
       </div>
       <div className="home-page">
         <Suspense fallback={<LoadSpinner />}>
-          <Exhibition />
+          <Marque />
         </Suspense>
       </div>
     </>

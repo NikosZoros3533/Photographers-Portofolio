@@ -18,10 +18,10 @@ const About = () => {
 
   return (
     <div className="about-container">
-      <button className="language-button" onClick={setToEng}>
+      <button className={language==="eng"?"language-button pressed":"language-button"} onClick={setToEng}>
         <span>ENG</span>
       </button>
-      <button className="language-button" onClick={setToEl}>
+      <button className={language==="el"?"language-button pressed":"language-button"} onClick={setToEl}>
         <span>EL</span>
       </button>
       <div className="about-content">

@@ -1,22 +1,25 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, Suspense } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import Banner from "./Banner";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "../css/Gallery.css";
 
-const Gallery = ({ photos }) => {
 
+const Gallery = ({ photos }) => {
   const [model, setModel] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState(null);
 
-  const getImg = useCallback(function getImg(imgSrc) {
-    if (tempImgSrc !== imgSrc) {
-      setTempImgSrc(imgSrc);
-    }
+  const getImg = useCallback(
+    function getImg(imgSrc) {
+      if (tempImgSrc !== imgSrc) {
+        setTempImgSrc(imgSrc);
+      }
 
-    setModel(true);
-  },[tempImgSrc]);
+      setModel(true);
+    },
+    [tempImgSrc]
+  );
 
   function handleKeyDown(event) {
     if (event.key === "Escape") {

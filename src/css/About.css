@@ -46,6 +46,14 @@
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   background-color: #ffe5ff;
+  cursor: pointer;
+  margin-left: 0.2rem;
+}
+
+.language-button:hover, .language-button.pressed{
+  color: #ffe5ff;
+  background-color:black;
+  cursor: pointer;
 }
 
 .language-button span {

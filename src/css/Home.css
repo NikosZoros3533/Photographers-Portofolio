@@ -9,10 +9,12 @@
 .section-1 {
   background-color: black;
   background-image: url("/background-removebg.webp");
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-position: fixed;
   background-size: cover;
   background-position: 50% 40%;
   position: relative;
+  will-change: transform;
 }
 
 #title-home-page {
@@ -26,9 +28,9 @@
   margin: 0;
   position: relative;
   -webkit-text-stroke-width: 1px;
-  /*-webkit-text-stroke-color: black;*/
   color: #40e0d0;
   filter: drop-shadow(0 0 0.6rem #40e0d0);
+  will-change: filter;
 }
 
 .fadeIn {
@@ -42,18 +44,27 @@
   animation-duration: 5s;
 }
 
+.fadeIn,
+.fadeIn2 {
+  will-change: opacity, transform;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .glass-box {
   height: 10rem;
   width: 30%;
+  min-width: 2rem;
+  min-height: 2rem;
   position: absolute;
   bottom: 25%;
   left: 15%;
